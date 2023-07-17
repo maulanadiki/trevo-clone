@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\type;
+use App\Models\mobil;
 
 class carController extends Controller
 {
@@ -11,7 +13,8 @@ class carController extends Controller
      */
     public function index()
     {
-        return view('pos.pos');
+        $mobil = mobil::leftJoin('type_mobil','type_mobil.id_type','=','mobil.id_type')->get();
+        return view('pos.pos',compact('mobil'));
     }
 
     /**

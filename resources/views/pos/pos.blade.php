@@ -23,9 +23,11 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row" style="height:100vh;">
+        <div class="row" style="height:100vh; background-color:#f3f3f3;">
             <div class="col-md-8">@include('pos.card_car')</div>
-            <div class="col-md-4">ini untuk sub nya</div>
+            <div class="col-md-4" >
+                <div style="position:fixed; border: 1px solid #6f6f6f; height:100vh;"></div>
+            </div>
         </div>
     </div>
 

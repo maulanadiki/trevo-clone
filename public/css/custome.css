@@ -4,3 +4,7 @@
     width: 100vw;
     background-color: red;
 }
+.card__rent{
+    background-color: blue;
+    cursor:pointer;
+}
