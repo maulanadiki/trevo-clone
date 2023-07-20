@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root{
+    --color-navbar-purple : #8552f2;
+    --color-navbar-border : #4d2f8f;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    margin-bottom: 0px !important;
+}
+.navigasi{
+    background-color: var(--color-navbar-purple);
+    height: 50px;
+    width: 100%;
+}
+.logo{
+    width: 129px;
+    height: auto;;
+}
+
+.navbar__support{
+    display: grid;
+    grid-template-columns:  200px 1fr;
+    position: relative;
+}
+.navbar__nav{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.navbar__item{
+    cursor: pointer;
+    padding: 0 40px;
+    color: white;
+}
+.navbar__subnav{
+    position: absolute;
+    width: auto;
+    background-color: #f3f3f3;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+    padding: 20px;
+    justify-items: center;
+
+}
+
+.navbar__item.submenu:hover .navbar__subnav{
+    height: 150px;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    border-radius: 12px;
+    flex-wrap: nowrap;
+    z-index: 10000;
+
+}
+.navbar__subnav__item{
+    color: #3f3f3f;
+}
+

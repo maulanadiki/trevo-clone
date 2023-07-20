@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class sewamobilController extends Controller
+class webpageController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('layout.layout');
+        return view('dashboard.content');
     }
 
     /**
