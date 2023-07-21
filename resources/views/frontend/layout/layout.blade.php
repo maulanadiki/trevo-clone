@@ -18,6 +18,7 @@
 
 <!-- <link rel="stylesheet" type="text/css" href="{{ asset('asset/css/custome.css') }}"> -->
     <link rel="stylesheet" href="{{asset('/asset/css/asset-carousel.css') }}">
+    <link rel="stylesheet" href="{{asset('/asset/css/footer.css') }}">
 
     
 
@@ -31,7 +32,7 @@
     @yield('konten')
 </section>
 <footer>
-    diki maulana
+    @include('frontend.layout.footer')
 </footer>
 </body>
 

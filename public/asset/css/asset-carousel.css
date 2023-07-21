@@ -217,3 +217,47 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   font-size: .75rem;
   padding: 0px 25px;
 }
+
+.testimoni__title{
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(95, 53, 175);
+}
+.testimoni__card{
+  background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 5px #e3e1fd;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .2s ease-in-out 0s;
+    width: 300px;
+    padding: 5px;
+}
+.card__header{
+  border-bottom: 1px solid #4f4f4f;
+}
+.testimoni__nama{
+  padding: 10px 0px;
+}
+.text-lg{
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.text-sm{
+  font-size: .875rem;
+}
+.card__body__quote{
+  padding: 5px;
+  text-align: justify;
+  color: #4f4f4f;
+}
+.testimoni__rating{
+
+}
+.star {
+  color: #ccc;
+  cursor: pointer;
+}
+.star.filled {
+  color: #ffca08;
+}

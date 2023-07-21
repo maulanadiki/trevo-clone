@@ -163,12 +163,12 @@
 
             </div>
         </div>
-
+        <!-- tombol gues -->
         <div class="col-md-12 mb-5 d-flex justify-content-center gap-3">
             <button class="gues__host">Guest</button>
             <button class="gues__host">Host</button>
         </div>
-
+        <!-- cara daftar -->
         <div class="row p-0 m-0">
             <div class="col-md-6 text-center">
                 <img src="{{asset('/asset/slider/big-phone.png')}}" alt="tata cara penggunaan aplikasi"
@@ -187,11 +187,14 @@
                 </div>
                 <div number="3" class="cara__sewa mb-5">
                     <p class="cara__title">Pilih Mobil dan Detail Pemesanan</p>
-                    <p class="cara__description">Cari mobil sesuai budget dan kebutuhanmu. Masukkan tanggal, waktu dan alamat pengantaran. Tentukan opsi pengantaran serta asuransi perjalanan</p>
+                    <p class="cara__description">Cari mobil sesuai budget dan kebutuhanmu. Masukkan tanggal, waktu dan
+                        alamat pengantaran. Tentukan opsi pengantaran serta asuransi perjalanan</p>
                 </div>
                 <div number="4" class="cara__sewa mb-5">
                     <p class="cara__title">Lakukan Pembayaran</p>
-                    <p class="cara__description">Tersedia metode pembayaran melalui bank BCA, Mandiri, BNI, BRI, Permata atau melalui e-wallet Gopay, Shopee Pay, Link Aja, OVO, serta melalui layanan paylater Indodana</p>
+                    <p class="cara__description">Tersedia metode pembayaran melalui bank BCA, Mandiri, BNI, BRI, Permata
+                        atau melalui e-wallet Gopay, Shopee Pay, Link Aja, OVO, serta melalui layanan paylater Indodana
+                    </p>
                 </div>
                 <div number="5" class="cara__sewa mb-5">
                     <p class="cara__title">Nikmati Perjalanan</p>
@@ -199,6 +202,76 @@
                 </div>
             </div>
         </div>
+        <!-- Testimoni -->
+        <p class="testimoni__title text-center mb-5" style="color: rgb(95, 53, 175);">Kata Pengguna</p>
+        <div class="d-flex flex-row gap-4 justify-content-center pb-5">
+            <div class="testimoni__card">
+                <div class="d-flex flex-row justify-content-center card__header">
+                    <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
+                    <div class="testimoni__nama">
+                        <p class="text-lg">Michellin</p>
+                        <span class="text-sm">traveller</span>
+                        <div class="testimoni__rating">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                        </div>
+                    </div>
+                    <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
+                        style="width:90px; height:90px;">
+                </div>
+                <div class="card__body">
+                    <p class="text-sm card__body__quote">Di apps ini kalian mudah buat car sharing n bs jg kl kalian mau
+                        jalan2 d dlm kota slama lebaran inii.. driver ny ramaahhh mbl bagus bersih dan baruuu</p>
+                </div>
+            </div>
+            <div class="testimoni__card">
+                <div class="d-flex flex-row justify-content-center card__header">
+                    <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
+                    <div class="testimoni__nama">
+                        <p class="text-lg">Rigel_$</p>
+                        <span class="text-sm">Photographer</span>
+                        <div class="testimoni__rating">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                        </div>
+                    </div>
+                    <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
+                        style="width:90px; height:90px;">
+                </div>
+                <div class="card__body">
+                    <p class="text-sm card__body__quote">Semangat untuk bagikan kode referralnya Kakak. Semakin banyak yg menggunakan kode referralmu maka semakin besar kesempatan yg kakak...</p>
+                </div>
+            </div>
+            <div class="testimoni__card">
+                <div class="d-flex flex-row justify-content-center card__header">
+                    <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
+                    <div class="testimoni__nama">
+                        <p class="text-lg">Abidza145</p>
+                        <span class="text-sm">Businessman</span>
+                        <div class="testimoni__rating">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
+                        style="width:90px; height:90px;">
+                </div>
+                <div class="card__body">
+                    <p class="text-sm card__body__quote">Mobilnya bagus bagus ga nyesel sewa di trevo</p>
+                </div>
+            </div>
+            
+        </div>
+
     </div>
 
 

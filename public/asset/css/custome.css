@@ -5,6 +5,8 @@
     --text-primary : rgb(95, 53, 175);
     --text-card-title:#52bebc;
     --text-card-title-hover:#e6e04f;
+    --text-lg:1.125rem;
+    --text-sm:.875rem;
 }
 
 * {

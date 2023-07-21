@@ -33,3 +33,29 @@ function restoreImage(element) {
         image.src= "http://127.0.0.1:8000/asset/slider/security-purple.png"; break;
     } 
 }
+
+  const stars = document.querySelectorAll(".star");
+
+  stars.forEach((star, index) => {
+    star.addEventListener("mouseover", () => {
+      resetStars();
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add("filled");
+      }
+    });
+
+    star.addEventListener("mouseout", () => {
+      resetStars();
+    });
+
+    star.addEventListener("click", () => {
+      alert(`Anda memberi rating: ${index + 1}`);
+      // Di sini Anda bisa mengirim rating ke server atau melakukan tindakan lain sesuai kebutuhan.
+    });
+  });
+
+  function resetStars() {
+    stars.forEach((star) => {
+      star.classList.remove("filled");
+    });
+  }
