@@ -25,7 +25,7 @@
 </head>
 <body>
 <nav>
-    @include('layout.navbar')
+    @include('frontend.layout.navbar')
 </nav>
 <section>
     @yield('konten')

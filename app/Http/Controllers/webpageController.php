@@ -11,7 +11,7 @@ class webpageController extends Controller
      */
     public function index()
     {
-        return view('dashboard.content');
+        return view('frontend.dashboard.content');
     }
 
     /**
