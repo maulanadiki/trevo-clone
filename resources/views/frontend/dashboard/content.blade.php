@@ -87,8 +87,8 @@
                         <img src="{{asset('/asset/slider/people.png')}}" class="story__people" alt="people">
                     </div>
                     <div class="d-flex flex-row justify-content-center align-content-center">
-                      <p class="story__point">1.5K</p>
-                      <p class="story__descript">Pengguna</p>
+                        <p class="story__point">1.5K</p>
+                        <p class="story__descript">Pengguna</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -96,8 +96,8 @@
                         <img src="{{asset('/asset/slider/booking-completed.png')}}" class="story__people" alt="people">
                     </div>
                     <div class="d-flex flex-row justify-content-center align-content-center">
-                      <p class="story__point">71.7K</p>
-                      <p class="story__descript">Booking Selesai</p>
+                        <p class="story__point">71.7K</p>
+                        <p class="story__descript">Booking Selesai</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -105,8 +105,8 @@
                         <img src="{{asset('/asset/slider/indonesia.png')}}" class="story__people" alt="people">
                     </div>
                     <div class="d-flex flex-row justify-content-center align-content-center">
-                      <p class="story__point">22</p>
-                      <p class="story__descript">Kota di indonesia</p>
+                        <p class="story__point">22</p>
+                        <p class="story__descript">Kota di indonesia</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -114,8 +114,8 @@
                         <img src="{{asset('/asset/slider/inscrit.png')}}" class="story__people" alt="people">
                     </div>
                     <div class="d-flex flex-row justify-content-center align-content-center">
-                      <p class="story__point">10.2K</p>
-                      <p class="story__descript">Mobile Terdaftar</p>
+                        <p class="story__point">10.2K</p>
+                        <p class="story__descript">Mobile Terdaftar</p>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,86 @@
 
     <!-- Kenapa sewa mobil ? -->
     <div class="why__container col-md-12 text-center">
-      <p class="why__title">Kenapa sewa di Trevo</p>
+        <p class="why__title pb-5 pt-5">Kenapa sewa di Trevo</p>
+
+        <div class="col-md-11 mx-auto mb-5">
+            <div class="d-flex flex-row gap-5 justify-content-center">
+                <div class="why__card" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                    <img src="{{asset('/asset/slider/keys-purple.png')}}" alt="" id="image1">
+                    <div class="flex flex-coloumn justify-content-center">
+                        <p class="why__card__title">Bisa Lepas Kunci</p>
+                        <p class="why__card__description">pergi ke berbagai destinasi sesukamu dengan jaminan privasi
+                            dari sewa mobil lepas kunci</p>
+                    </div>
+                </div>
+                <div class="why__card" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                    <img src="{{asset('/asset/slider/car-purple.png')}}" alt="" id="image2">
+                    <div class="flex flex-coloumn justify-content-center">
+                        <p class="why__card__title">Bisa Lepas Kunci</p>
+                        <p class="why__card__description">pergi ke berbagai destinasi sesukamu dengan jaminan privasi
+                            dari sewa mobil lepas kunci</p>
+                    </div>
+                </div>
+                <div class="why__card" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                    <img src="{{asset('/asset/slider/phone-purple.png')}}" alt="" id="image3">
+                    <div class="flex flex-coloumn justify-content-center">
+                        <p class="why__card__title">Bisa Lepas Kunci</p>
+                        <p class="why__card__description">pergi ke berbagai destinasi sesukamu dengan jaminan privasi
+                            dari sewa mobil lepas kunci</p>
+                    </div>
+                </div>
+                <div class="why__card" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+                    <img src="{{asset('/asset/slider/security-purple.png')}}" alt="" id="image4">
+                    <div class="flex flex-coloumn justify-content-center">
+                        <p class="why__card__title">Bisa Lepas Kunci</p>
+                        <p class="why__card__description">pergi ke berbagai destinasi sesukamu dengan jaminan privasi
+                            dari sewa mobil lepas kunci</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-5 d-flex justify-content-center gap-3">
+            <button class="gues__host">Guest</button>
+            <button class="gues__host">Host</button>
+        </div>
+
+        <div class="row p-0 m-0">
+            <div class="col-md-6 text-center">
+                <img src="{{asset('/asset/slider/big-phone.png')}}" alt="tata cara penggunaan aplikasi"
+                    style="width: 625px; height:auto;">
+            </div>
+
+            <div class="col-md-6 text-start">
+
+                <div number="1" class="cara__sewa mb-5">
+                    <p class="cara__title">Download & Sign Up</p>
+                    <p class="cara__description">Daftar dengan alamat email dan masukkan kode OTP</p>
+                </div>
+                <div number="2" class="cara__sewa mb-5">
+                    <p class="cara__title">Verifikasi Akun</p>
+                    <p class="cara__description">Lengkapi profil dengan Selfie serta unggah SIM & KTP kamu</p>
+                </div>
+                <div number="3" class="cara__sewa mb-5">
+                    <p class="cara__title">Pilih Mobil dan Detail Pemesanan</p>
+                    <p class="cara__description">Cari mobil sesuai budget dan kebutuhanmu. Masukkan tanggal, waktu dan alamat pengantaran. Tentukan opsi pengantaran serta asuransi perjalanan</p>
+                </div>
+                <div number="4" class="cara__sewa mb-5">
+                    <p class="cara__title">Lakukan Pembayaran</p>
+                    <p class="cara__description">Tersedia metode pembayaran melalui bank BCA, Mandiri, BNI, BRI, Permata atau melalui e-wallet Gopay, Shopee Pay, Link Aja, OVO, serta melalui layanan paylater Indodana</p>
+                </div>
+                <div number="5" class="cara__sewa mb-5">
+                    <p class="cara__title">Nikmati Perjalanan</p>
+                    <p class="cara__description">Tunggu mobil diantar untuk perjalanmu yang bebas dan menyenangkan</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
 </div>
+
+<script src="{{asset('/asset/js/content.js')}}"></script>
 @endsection

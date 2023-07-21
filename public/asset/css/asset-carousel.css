@@ -23,7 +23,7 @@ swiper-slide img {
     top: 5rem;
     left: 20px;
     color: #fff;
-    width: 30%;
+    width: 50%;
 }
 .slider__tagline__header {
     font-size: 3rem;
@@ -42,11 +42,10 @@ swiper-slide img {
 .slider__tagline__button{
   position: absolute;
   width: 100%;
-  bottom: 2rem;
+  bottom: 3rem;
   text-align: center;
   padding: 0 auto;
   display: flex;
-
   justify-content: center;
 }
 
@@ -82,7 +81,7 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 .story__container{
   height: 22.3rem;
   background-color: #3b1e7c;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 25px 20px -20px rgba(0,0,0,.45);
 }
 .story__title{
   font-size: 2rem;
@@ -109,4 +108,112 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
 .why__container{
   background: linear-gradient(180deg,#e3e1fd,#fefefe 30%,#fefefe 70%,#e3e1fd);
+}
+.why__title{
+  color: var(--text-primary);
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+.why__card{
+  width: 250px;
+  border-radius: 24px;
+  box-shadow: 0 0 30px 5px #e3e1fd;
+  background-color: #fff;
+  transition: all .2s ease-in-out 0s;
+  padding: 1rem;
+  cursor: pointer;
+}
+.why__card:hover {
+  background-color: var(--text-primary);
+  transform: scale(1.1); /* Enlarge the card by 10% on hover */
+  transform-origin: center;
+}
+.why__card:hover .why__card__title{
+  color: var(--text-card-title-hover);
+}
+.why__card:hover .why__card__description{
+  color: #fff;
+}
+
+
+.why__card img{
+  height: 116px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.why__card__title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-card-title);
+}
+.why__card__description{
+  font-size: .75rem;
+}
+
+.gues__host{
+  border: none;
+  background-color: rgba(133,82,242, 1);
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px 5px #e3e1fd;
+  transition: .3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.gues__host:nth-child(2){
+  background-color: #fff;
+  color: #3f3f3f;
+}
+
+.gues__host:nth-child(2):hover{
+  background-color: rgba(133,82,242, 1);
+  color: #fff;
+}
+
+/* sewa */
+.cara__sewa{
+  background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 5px #e3e1fd;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s ease-in-out;
+    padding: 25px 0px;
+}
+.cara__sewa::before{
+  align-items: center;
+  background-color: #f3eb2d;
+  border-radius: 50%;
+  color: #5f35af;
+  content: attr(number);
+  display: flex;
+  font-weight: 700;
+  height: 30px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: calc(50% - 15px);
+  transform: translate(-50%);
+  width: 30px;
+}
+.cara__sewa:hover {
+  background-color: #5f35af;
+  transform: scale(1.1); /* Enlarge the card by 10% on hover */
+  transform-origin: center;
+  color: #fff;
+}
+
+.cara__sewa p {
+  padding-bottom: 0px !important;
+}
+.cara__title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 5px 25px 0 25px;
+}
+.cara__description{
+  font-size: .75rem;
+  padding: 0px 25px;
 }

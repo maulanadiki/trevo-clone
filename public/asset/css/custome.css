@@ -2,6 +2,9 @@
 :root{
     --color-navbar-purple : #8552f2;
     --color-navbar-border : #4d2f8f;
+    --text-primary : rgb(95, 53, 175);
+    --text-card-title:#52bebc;
+    --text-card-title-hover:#e6e04f;
 }
 
 * {
@@ -17,7 +20,7 @@ body {
 
 ul,
 li,
-ol, a {
+ol, a ,p{
     list-style: none;
     text-decoration: none;
     margin-bottom: 0px !important;
