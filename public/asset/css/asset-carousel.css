@@ -1,7 +1,10 @@
+.konten__container{
+  margin-top: 50px !important;
+}
 swiper-container {
     width: 100%;
     height: 70vh;
-    /* padding: 50px; */
+    padding-top: 150px;
 }
 
 swiper-slide {

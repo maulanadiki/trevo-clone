@@ -11,6 +11,7 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -27,32 +28,47 @@ ol, a ,p{
     text-decoration: none;
     margin-bottom: 0px !important;
 }
+
 .navigasi{
-    background-color: var(--color-navbar-purple);
-    height: 50px;
     width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--color-navbar-purple);
+    top: 0;
+    /* padding: 10px; */
 }
-.logo{
-    width: 129px;
-    height: auto;
+.logo_trevo{
     padding: 10px;
 }
-
+.navigasi__logo{
+    width: 129px;
+    height: auto;
+}
 .navbar__support{
-    display: grid;
-    grid-template-columns:  200px 1fr;
     position: relative;
-    padding: 0.75rem 0;
+    padding: 13px 0 0 0;
 
 }
 .navbar__nav{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    justify-content: end;
+    gap: 40px;
 }
 .navbar__item{
     cursor: pointer;
-    padding: 0 40px;
     color: white;
+    height: 37px;
+}
+
+.navbar_item.item__scrolled{
+    color: var(--text-primary);
 }
 .navbar__subnav{
     position: absolute;
@@ -95,4 +111,226 @@ ol, a ,p{
     height: 36px;
     padding: 10px 0;
 }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      pointer-events: none;
+    }
+    100% {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 
+  
+.show__navbar{
+    animation: fadeIn 1s ease-in-out forwards;
+    display: block !important;
+    opacity: 1 !important;
+}
+
+
+@media screen and (max-width:767px){
+    .navigasi{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .navigasi__logo{
+        width: 80px;
+    }
+    /* main navbar */
+    .navbar__support{
+        display: none;
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: calc(100% - 50px);
+        opacity: 0;
+    }
+    .navbar__nav{
+        flex-direction: column;
+        justify-content: start;
+        gap:1rem;
+    }
+   
+    .navbar__item a{
+        color: black;
+    }
+    .navbar__subnav{
+        width: 50%;
+        left: 14rem;
+        top: 5rem;
+    }
+
+    .navbar__item.submenu:hover .navbar__subnav{
+        height: auto;
+        
+    }
+    .navbar__item.submenu:hover .pelajarLebihLanjut {
+        box-shadow: none;
+    }
+    .navbar__item.submenu .navbar__subnav #kepercayaan::before{
+        content: '';
+        height: 1px;
+        border: 1px solid #bbb7b7;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+    }
+    .navbar__item.submenu .navbar__subnav #kepercayaan{
+        display: block;
+        position: fixed;
+        top: 17rem;
+        left: 2rem;
+        visibility: visible;
+        opacity: 1;
+        width: 90%;
+    }
+
+    .navbar__item.submenu .navbar__subnav #FAQ{
+        display: block;
+        position: fixed;
+        top: 21rem;
+        left: 2rem;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbar__item.submenu .navbar__subnav #hubungi__kami{
+        display: block;
+        position: fixed;
+        top: 25rem;
+        left: 2rem;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* buttom humberger */
+    .navbar__mobile{
+        justify-self: end;
+        align-self: center;
+        display: block;
+    }
+    .mobile__humberger{
+        background-color:var(--color-navbar-purple);
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+    .navbar__humberger{
+        width: 2rem;
+        border: 1px solid white;
+    }
+
+
+
+    
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) { 
+    .navigasi{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .navigasi__logo{
+        width: 120px;
+    }
+    /* main navbar */
+    .navbar__support{
+        display: none;
+        position: fixed;
+        top: 50px;
+        min-width: 768px;
+        width: 100%;
+        max-width: 1023px;
+        height: calc(100% - 50px);
+        opacity: 0;
+    }
+    .navbar__nav{
+        flex-direction: column;
+        justify-content: start;
+        gap:1rem;
+    }
+   
+    .navbar__item a{
+        color: black;
+    }
+    .navbar__subnav{
+        width: 50%;
+        left: 14rem;
+        top: 5rem;
+    }
+
+    .navbar__item.submenu:hover .navbar__subnav{
+        height: auto;
+        
+    }
+    .navbar__item.submenu:hover .pelajarLebihLanjut {
+        box-shadow: none;
+    }
+    .navbar__item.submenu .navbar__subnav #kepercayaan::before{
+        content: '';
+        height: 1px;
+        border: 1px solid #bbb7b7;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+    }
+    .navbar__item.submenu .navbar__subnav #kepercayaan{
+        display: block;
+        position: fixed;
+        top: 17rem;
+        left: 2rem;
+        visibility: visible;
+        opacity: 1;
+        width: 90%;
+    }
+
+    .navbar__item.submenu .navbar__subnav #FAQ{
+        display: block;
+        position: fixed;
+        top: 21rem;
+        left: 2rem;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbar__item.submenu .navbar__subnav #hubungi__kami{
+        display: block;
+        position: fixed;
+        top: 25rem;
+        left: 2rem;
+        visibility: visible;
+        opacity: 1;
+    }
+    .navbar__mobile{
+        justify-self: end;
+        align-self: center;
+        display: block;
+    }
+    .mobile__humberger{
+        background-color:var(--color-navbar-purple);
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .navbar__humberger{
+        width: 2rem;
+        border: 1px solid white;
+    }
+ }
+@media screen and (min-width: 1024px) {  }

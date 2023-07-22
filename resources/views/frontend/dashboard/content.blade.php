@@ -2,7 +2,8 @@
 
 @extends('frontend.layout.layout')
 @section('konten')
-<div class="container-fluid p-0 m-0">
+
+<div class="container-fluid p-0 m-0 konten__container">
     <!-- slider -->
     <swiper-container class="mySwiper p-0 m-0" pagination="true" pagination-clickable="true" navigation="false"
         space-between="30" centered-slides="true" autoplay-delay="10500" autoplay-disable-on-interaction="false"
