@@ -42,17 +42,6 @@
     color: rgba(133,82,242,1);
 }
 
-.footer__menu__produk{
-
-} 
-.footer__menu__tentang{
-
-}
-.footer__menu__pelanggan{
-
-}
-
-
 .footer__medsos__container{
     display: flex;
     flex-direction: row;
@@ -82,13 +71,13 @@
     color: #fff;
     padding: 10px 0px;
 }
-.footer__download__container{
+/* .footer__download__container{
     display: flex;
     flex-direction: row;
     gap: 4px;
     justify-content: end;
     position: relative;
-}
+} */
 .footer__download__img{
     width: 112px;
     height: 30px;
@@ -104,3 +93,20 @@
     padding: 20px;
     text-align: center;
 }
+@media screen and (max-width:767px){
+    .footer__logo > img{
+        width: 180px;
+        height: auto;
+    }
+    .footer__medsos__container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+    .footer__download__container{
+
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {}

@@ -31,11 +31,11 @@
     <nav>
         @include('frontend.layout.navbar')
     </nav>
-    <section>
+    <section class="p-0 m-0">
         @yield('konten')
     </section>
     <footer>
-        <!-- @include('frontend.layout.footer') -->
+        @include('frontend.layout.footer')
     </footer>
 </body>
 

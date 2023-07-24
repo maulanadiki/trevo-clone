@@ -156,6 +156,7 @@ ol, a ,p{
         width: 100%;
         height: calc(100% - 50px);
         opacity: 0;
+        background-color: #f3f3f3;
     }
     .navbar__nav{
         flex-direction: column;
@@ -221,6 +222,7 @@ ol, a ,p{
         justify-self: end;
         align-self: center;
         display: block;
+        padding-right: 10px;
     }
     .mobile__humberger{
         background-color:var(--color-navbar-purple);
@@ -257,6 +259,7 @@ ol, a ,p{
         max-width: 1023px;
         height: calc(100% - 50px);
         opacity: 0;
+        background-color: #f3f3f3;
     }
     .navbar__nav{
         flex-direction: column;
@@ -320,6 +323,7 @@ ol, a ,p{
         justify-self: end;
         align-self: center;
         display: block;
+        padding-right: 10px;
     }
     .mobile__humberger{
         background-color:var(--color-navbar-purple);
