@@ -34,28 +34,28 @@ function restoreImage(element) {
     } 
 }
 
-  const stars = document.querySelectorAll(".star");
+  // const stars = document.querySelectorAll(".star");
 
-  stars.forEach((star, index) => {
-    star.addEventListener("mouseover", () => {
-      resetStars();
-      for (let i = 0; i <= index; i++) {
-        stars[i].classList.add("filled");
-      }
-    });
+  // stars.forEach((star, index) => {
+  //   star.addEventListener("mouseover", () => {
+  //     resetStars();
+  //     for (let i = 0; i <= index; i++) {
+  //       stars[i].classList.add("filled");
+  //     }
+  //   });
 
-    star.addEventListener("mouseout", () => {
-      resetStars();
-    });
+  //   star.addEventListener("mouseout", () => {
+  //     resetStars();
+  //   });
 
-    star.addEventListener("click", () => {
-      alert(`Anda memberi rating: ${index + 1}`);
-      // Di sini Anda bisa mengirim rating ke server atau melakukan tindakan lain sesuai kebutuhan.
-    });
-  });
+  //   star.addEventListener("click", () => {
+  //     alert(`Anda memberi rating: ${index + 1}`);
+  //     // Di sini Anda bisa mengirim rating ke server atau melakukan tindakan lain sesuai kebutuhan.
+  //   });
+  // });
 
-  function resetStars() {
-    stars.forEach((star) => {
-      star.classList.remove("filled");
-    });
-  }
+  // function resetStars() {
+  //   stars.forEach((star) => {
+  //     star.classList.remove("filled");
+  //   });
+  // }

@@ -232,71 +232,72 @@
     </div>
 
     <p class="testimoni__title text-center mb-5" style="color: rgb(95, 53, 175);">Kata Pengguna</p>
-    <div class="d-flex flex-row gap-4 p-0 m-0 overflow-auto">
-    <div class="testimoni__card">
-                <div class="d-flex flex-row justify-content-center card__header">
-                    <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
-                    <div class="testimoni__nama">
-                        <p class="text-lg">Michellin</p>
-                        <span class="text-sm">traveller</span>
-                        <div class="testimoni__rating">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                        </div>
+    <div class="d-flex flex-row gap-4 p-0 m-0 overflow-auto  justify-content-center">
+        <div class="testimoni__card">
+            <div class="d-flex flex-row justify-content-center card__header">
+                <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
+                <div class="testimoni__nama">
+                    <p class="text-lg">Michellin</p>
+                    <span class="text-sm">traveller</span>
+                    <div class="testimoni__rating">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
                     </div>
-                    <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
-                        style="width:90px; height:90px;">
                 </div>
-                <div class="card__body">
-                    <p class="text-sm card__body__quote">Di apps ini kalian mudah buat car sharing n bs jg kl kalian mau
-                        jalan2 d dlm kota slama lebaran inii.. driver ny ramaahhh mbl bagus bersih dan baruuu</p>
-                </div>
+                <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
+                    style="width:90px; height:90px;">
             </div>
-            <div class="testimoni__card">
-                <div class="d-flex flex-row justify-content-center card__header">
-                    <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
-                    <div class="testimoni__nama">
-                        <p class="text-lg">Rigel_$</p>
-                        <span class="text-sm">Photographer</span>
-                        <div class="testimoni__rating">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                        </div>
+            <div class="card__body">
+                <p class="text-sm card__body__quote">Di apps ini kalian mudah buat car sharing n bs jg kl kalian mau
+                    jalan2 d dlm kota slama lebaran inii.. driver ny ramaahhh mbl bagus bersih dan baruuu</p>
+            </div>
+        </div>
+        <div class="testimoni__card">
+            <div class="d-flex flex-row justify-content-center card__header">
+                <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
+                <div class="testimoni__nama">
+                    <p class="text-lg">Rigel_$</p>
+                    <span class="text-sm">Photographer</span>
+                    <div class="testimoni__rating">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
                     </div>
-                    <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
-                        style="width:90px; height:90px;">
                 </div>
-                <div class="card__body">
-                    <p class="text-sm card__body__quote">Semangat untuk bagikan kode referralnya Kakak. Semakin banyak yg menggunakan kode referralmu maka semakin besar kesempatan yg kakak...</p>
-                </div>
+                <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
+                    style="width:90px; height:90px;">
             </div>
-            <div class="testimoni__card">
-                <div class="d-flex flex-row justify-content-center card__header">
-                    <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
-                    <div class="testimoni__nama">
-                        <p class="text-lg">Abidza145</p>
-                        <span class="text-sm">Businessman</span>
-                        <div class="testimoni__rating">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
+            <div class="card__body">
+                <p class="text-sm card__body__quote">Semangat untuk bagikan kode referralnya Kakak. Semakin banyak yg
+                    menggunakan kode referralmu maka semakin besar kesempatan yg kakak...</p>
+            </div>
+        </div>
+        <div class="testimoni__card">
+            <div class="d-flex flex-row justify-content-center card__header">
+                <img src="{{asset('/asset/slider/avatar.png') }}" style="widht:90px; height:90px;" alt="avatar">
+                <div class="testimoni__nama">
+                    <p class="text-lg">Abidza145</p>
+                    <span class="text-sm">Businessman</span>
+                    <div class="testimoni__rating">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star">&#9733;</span>
                     </div>
-                    <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
-                        style="width:90px; height:90px;">
                 </div>
-                <div class="card__body">
-                    <p class="text-sm card__body__quote">Mobilnya bagus bagus ga nyesel sewa di trevo</p>
-                </div>
+                <img src="{{asset('/asset/slider/double-quote.png') }}" alt="double-quote"
+                    style="width:90px; height:90px;">
             </div>
+            <div class="card__body">
+                <p class="text-sm card__body__quote">Mobilnya bagus bagus ga nyesel sewa di trevo</p>
+            </div>
+        </div>
     </div>
 
 

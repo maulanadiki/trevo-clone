@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
 :root{
     --color-navbar-purple : #8552f2;
     --color-navbar-border : #4d2f8f;
@@ -8,9 +8,14 @@
     --text-lg:1.125rem;
     --text-sm:.875rem;
 }
-
+.text-trevo{
+    color:rgba(133,82,242,1);
+}
+.font-bold{
+    font-weight: 700;
+}
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -139,7 +144,9 @@ ol, a ,p{
     display: block !important;
     opacity: 1 !important;
 }
-
+.aktif{
+    color: #e6e04f !important;
+}
 
 @media screen and (max-width:767px){
     .navigasi{
@@ -192,7 +199,7 @@ ol, a ,p{
     .navbar__item.submenu .navbar__subnav #kepercayaan{
         display: block;
         position: fixed;
-        top: 17rem;
+        top: 21rem;
         left: 2rem;
         visibility: visible;
         opacity: 1;
@@ -202,7 +209,7 @@ ol, a ,p{
     .navbar__item.submenu .navbar__subnav #FAQ{
         display: block;
         position: fixed;
-        top: 21rem;
+        top: 25rem;
         left: 2rem;
         visibility: visible;
         opacity: 1;
@@ -211,7 +218,7 @@ ol, a ,p{
     .navbar__item.submenu .navbar__subnav #hubungi__kami{
         display: block;
         position: fixed;
-        top: 25rem;
+        top: 29rem;
         left: 2rem;
         visibility: visible;
         opacity: 1;

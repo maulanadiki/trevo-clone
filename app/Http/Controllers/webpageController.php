@@ -13,6 +13,9 @@ class webpageController extends Controller
     {
         return view('frontend.dashboard.content');
     }
+    public function host(){
+        return view('frontend.dashboard.host');
+    }
 
     /**
      * Show the form for creating a new resource.

@@ -15,9 +15,6 @@ use App\Http\Controllers\webpageController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/',[webpageController::class, 'index'])->name('webpage');
+Route::get('/host',[webpageController::class, 'host'])->name('host');
 

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="{{asset('/asset/navbar/logo.png') }}">
+    <title> @yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <!-- datatables -->
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
@@ -20,6 +20,10 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="{{ asset('asset/css/custome.css') }}"> -->
     <link rel="stylesheet" href="{{asset('/asset/css/asset-carousel.css') }}">
+    <link rel="stylesheet" href="{{asset('/asset/css/blog.css') }}">
+    <link rel="stylesheet" href="{{asset('/asset/css/host.css') }}">
+    <link rel="stylesheet" href="{{asset('/asset/css/login.css') }}">
+    <link rel="stylesheet" href="{{asset('/asset/css/pelajari.css') }}">
     <link rel="stylesheet" href="{{asset('/asset/css/footer.css') }}">
 
 
@@ -45,6 +49,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
 </script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 <!-- carousel -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
